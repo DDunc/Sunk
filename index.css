@@ -1,0 +1,105 @@
+@font-face {
+   font-family: MyUnderwood;
+   src: url("fonts/MyUnderwood.ttf");
+}
+
+
+body {
+    background-image: url("images/tiled2.jpg");
+    background-repeat: repeat;
+    font-family: MyUnderwood;
+}
+
+input {
+    background-image: url("images/tiled2.jpg");
+    background-repeat: repeat;
+    font-family: MyUnderwood;
+}
+
+a {
+    color: white;
+    background-color: black;
+}
+
+.currentimg {
+  opacity: 1;
+  font-family: MyUnderwood;
+}
+
+img {
+  opacity: .25;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+summary {
+  font-size: 16px;
+}
+
+button {
+  font-family: MyUnderwood;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  width: 230px;
+  margin: 5px;
+}
+
+.btn-primary, .newgame, .guide {
+    background: black;
+    color: white;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open {
+    background: white;
+    color: black;
+}
+
+.inactive {
+  pointer-events: none;
+  opacity: 0.25;
+}
+
+.invisible {
+  display: none;
+}
+
+
+.dreamtext {
+  opacity: 1;
+  font-family: MyUnderwood;
+  font-size: 20px;
+  vertical-align: top;
+}
+
+.nextturn {
+  vertical-align: top;
+  display: inline-block;
+  /* To horizontally center images and caption */
+  text-align: left;
+  /* The width of the container also implies margin around the images. */
+  width: 230px;
+}
+
+
+.full {
+  background: url() no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 1;
+}
+
+html.full.currentimg {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 1;
+}
+
+

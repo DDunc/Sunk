@@ -1,0 +1,87 @@
+
+<html>
+<head>
+  <meta name="description" content="[Sub Game Display]">
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+  <link href="index.css" rel="stylesheet" type="text/css"/>
+  <title>Sunk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container-fluid">
+    <ul class="nav nav-tabs" id="tabs-first">
+      <li id="a"class="active"><a href="#tab_a">Ship</a></li>
+      <li id ="b"><a href="#tab_b">Logbook</a></li>
+      <li id="c"><a href="#tab_c">Dossiers</a></li>
+      <li id="d"><a href="#tab_d">Game Options</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab_a">
+            <div class="row">
+            <div class="span3">
+              <details class= "desc" open>
+              <summary>Daily Log</summary>
+              </details>
+              <details class="stats">
+              <summary>Ship Stats</summary>
+              </details>
+      </div>
+           <div class="span9">
+                     <div src= "ship">
+            <img src="images/sub11.jpg" class="sub1"><img src="images/sub12.jpg" class="sub2 currentimg">
+            <h4 class= "currentstatus"></h4>
+            <div class="shortdesc"></div>
+          </div>
+          <br>
+            <div class="allactions">
+            <div class="mainoptions">
+            </div>
+            <div class="suboptions">
+            </div>
+          </div>
+      <!--Body content-->
+            </div>
+            </div>
+          </div> <!-- active panel -->
+        <div class="tab-pane" id="tab_b">
+          <h4 class="playerlog">The Logbook of James W. Harvey, Captain of the USS Medusa
+          </h4>
+        </div>
+        <div class="tab-pane" id="tab_c">
+            <h4>Ship and Crew Dossiers</h4>
+            <details class= "captain">
+              <summary>Captain James W. Harvey</summary>
+            </details>
+            <details class="marlowe">
+                <summary>First Officer Benjamin Marlowe</summary>
+            </details>
+            <details class= "robbins">
+                <summary>Chief Engineer Charles 'Chuck' Robbins</summary>
+            </details>
+            <details class= "scopes">
+                  <summary>Science Officer Stephen Scopes</summary>
+            </details>
+            <details class= "medusa">
+                <summary>USS Medusa</summary>
+            </details>
+        </div>
+        <div class="tab-pane" id="tab_d">
+            <button class="newgame">New Game</button>
+            <div class="formdiv invisible">
+              <form class="namediv" action="">
+              Enter your name, Captain:
+              <br>
+              <input type="text" name="playname" class="playerform" value="James W. Harvey">
+              <br>
+              <input type="submit" value="Assume Command">
+              </form>
+            </div>
+        </div> <!-- last pane -->
+    </div> <!-- tab content -->
+  </div> <!-- end of container -->
+</body>
+</html>
